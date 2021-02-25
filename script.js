@@ -39,24 +39,16 @@ const createCards = (products) => {
 const FETCH = async () => {
     await fetch('https://my-json-server.typicode.com/wend3ll-souza/productsApi/products')
    .then((response) => {
-      
       response.json()
-                .then(resultado=> {
-
-                    createCards(resultado);
-
+                .then(data => {
+                    createCards(data);
                 })
-                .catch((erro) => {
-
-                   console.log('Erro ao converter JSON: ' + erro);
-
+                .catch((error) => {
+                   console.log(error);
                 });
-
-   })
+    })
    .catch((erro) => {
-
       console.log(erro);
-
    });
 };
 

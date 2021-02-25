@@ -37,7 +37,7 @@ const createCards = (products) => {
 } 
 
 const FETCH = async () => {
-    await fetch('http://my-json-server.typicode.com/wend3ll-souza/productsApi/products')
+    await fetch('https://my-json-server.typicode.com/wend3ll-souza/productsApi/products')
    .then((response) => {
       
       response.json()

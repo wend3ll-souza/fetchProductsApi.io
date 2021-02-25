@@ -13,7 +13,7 @@ const createCards = (products) => {
         img.setAttribute('src', item.imagePath);
         img.setAttribute('alt', 'product image')
         h3.innerText = item.name;
-        p.innerText = item.price;
+        p.innerText = `R$ ${item.price.toFixed(2)}`;
         btn. innerText = "comprar";
         
         img.className = "card-img-top w-75";
